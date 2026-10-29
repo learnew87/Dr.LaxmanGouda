@@ -9,10 +9,10 @@ PROFILE = {
     "name": "Dr. Laxman Gouda",
     "honorific": "Dr.",
     "pronouns": "He / Him",
-    "title": "Co-Founder & CEO, ABX3PV | Ramanujan Fellow at IISc Bangalore",
+    "title": "Co-Founder & CEO, ABX3PV | Ramanujan Fellow at IISc Bengaluru",
     "headline": "Industrial-Scale Next-Generation Hybrid Perovskite Solar Cell Modules & Clean Fuels",
     "bio": "Scientist, entrepreneur, and Ramanujan Fellow at the Indian Institute of Science (IISc). Leading ABX3PV to commercialize indigenous perovskite solar cell modules on flexible and sheet substrates, silicon/perovskite tandems, and clean solar fuels.",
-    "location": "Indian Institute of Science (IISc), Bangalore, India",
+    "location": "Indian Institute of Science (IISc), Bengaluru, India",
     "email": "laxmangouda@iisc.ac.in",
     "linkedin": "https://www.linkedin.com/in/dr-laxman-gouda-49878337/",
     "fellowship": "Marie Curie ITN Fellow & Ramanujan Fellow",
@@ -130,11 +130,11 @@ RECENT_HIGHLIGHTS = [
     {
         "id": "ramanujan-fellowship",
         "title": "Ramanujan Fellowship & Green Energy Leadership",
-        "venue": "Indian Institute of Science (IISc), Bangalore",
+        "venue": "Indian Institute of Science (IISc), Bengaluru",
         "badge": "National Fellowship",
         "date": "Fellowship Program",
         "summary": "Awarded national prestigious fellowship advancing next-generation solar energy and hydrogen synthesis.",
-        "details": "Leading cutting-edge research at IISc Bangalore on scalable manufacturing protocols for perovskite solar modules, photo-electrosynthesis of green hydrogen, and direct catalytic capture of CO2 converted into high-density fuels."
+        "details": "Leading cutting-edge research at IISc Bengaluru on scalable manufacturing protocols for perovskite solar modules, photo-electrosynthesis of green hydrogen, and direct catalytic capture of CO2 converted into high-density fuels."
     }
 ]
 
@@ -152,9 +152,9 @@ PROJECTS = [
     {
         "id": 2,
         "title": "Green Hydrogen & CO2-to-Chemicals Synthesis",
-        "subtitle": "Ramanujan Fellowship Research | IISc Bangalore",
+        "subtitle": "Ramanujan Fellowship Research | IISc Bengaluru",
         "description": "Pioneering the photo-electrosynthesis of green hydrogen and direct chemical capture of carbon dioxide stored into high-density chemical bonds for next-generation sustainable fuels.",
-        "tags": ["Green Hydrogen", "CO2 Capture", "Solar Fuels", "IISc Bangalore", "Catalysis"],
+        "tags": ["Green Hydrogen", "CO2 Capture", "Solar Fuels", "IISc Bengaluru", "Catalysis"],
         "link": "https://www.linkedin.com/in/dr-laxman-gouda-49878337/",
         "badge": "Flagship Research"
     },
@@ -206,14 +206,14 @@ EXPERIENCE = [
     {
         "role": "Co-Founder and CEO",
         "institution": "ABX3PV Private Limited",
-        "affiliation": "Indian Institute of Science (IISc), Bangalore",
+        "affiliation": "Indian Institute of Science (IISc), Bengaluru",
         "period": "2023 – Present",
         "description": "Leading deep-tech commercialization of next-generation Hybrid Perovskite solar cell modules. Pioneering industrial-scale sheet-to-sheet and continuous roll-to-roll manufacturing on rigid and flexible substrates."
     },
     {
         "role": "Ramanujan Fellow",
         "institution": "Indian Institute of Science (IISc)",
-        "affiliation": "Bangalore Urban, Karnataka, India",
+        "affiliation": "Bengaluru Urban, Karnataka, India",
         "period": "April 2023 – Present",
         "description": "Developing industrial-scale manufacturing of Hybrid Perovskite solar cell modules. Spearheading photo-electrosynthesis of green Hydrogen and direct catalytic capture of CO2 converted into high-density fuels."
     },
@@ -256,7 +256,7 @@ EDUCATION = [
     },
     {
         "degree": "Junior Research Scientist (Thin Film Solar Cells)",
-        "institution": "Indian Institute of Science (IISc), Bangalore",
+        "institution": "Indian Institute of Science (IISc), Bengaluru",
         "period": "2012 – 2014",
         "details": "Conducted research on thin-film photovoltaic absorber layers, vacuum deposition technologies, and device characterization."
     },
