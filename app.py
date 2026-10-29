@@ -1,7 +1,16 @@
-import os
-from flask import Flask, render_template, request, flash, redirect, url_for
+﻿import os
+import sys
+from flask import Flask, render_template, request, flash, redirect, url_for, send_from_directory
 
-app = Flask(__name__)
+# Ensure base directory is absolute so templates and static files always load on Vercel
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+
+app = Flask(
+    __name__,
+    template_folder=os.path.join(BASE_DIR, "templates"),
+    static_folder=os.path.join(BASE_DIR, "static"),
+    static_url_path="/static"
+)
 app.secret_key = os.environ.get("SECRET_KEY", "perovskite-energy-secret-2026")
 
 # Profile Information for Dr. Laxman Gouda
@@ -178,7 +187,7 @@ PROJECTS = [
     }
 ]
 
-# Working Prototypes Developed at ABX3PV (Equal 2x2 or 4x1 balanced grid)
+# Working Prototypes Developed at ABX3PV
 PROTOTYPES = [
     {
         "title": "Perovskite Solar Cell Modules & Panels",
@@ -279,8 +288,16 @@ AREAS_OF_EXPERTISE = [
     {"name": "Raman Spectroscopy & Nano-Optics", "category": "Characterization", "level": 95},
 ]
 
-@app.route("/")
-def index():
+# Explicit static file handler to ensure Vercel never 404s on images, CSS, or JS
+@app.route("/static/<path:filename>")
+def serve_static(filename):
+    return send_from_directory(app.static_folder, filename)
+
+# Universal Catch-All Route for GET requests
+# Ensures any URL requested on Vercel (/, /api, /api/index, /index.py, etc.) always renders 200 OK
+@app.route("/", defaults={"path": ""}, methods=["GET"])
+@app.route("/<path:path>", methods=["GET"])
+def index(path=""):
     return render_template(
         "index.html",
         profile=PROFILE,
@@ -294,8 +311,10 @@ def index():
         projects=PROJECTS,
     )
 
+# Contact form POST handler
 @app.route("/contact", methods=["POST"])
-def contact():
+@app.route("/<path:path>", methods=["POST"])
+def contact(path=""):
     name = request.form.get("name", "").strip()
     email = request.form.get("email", "").strip()
     message = request.form.get("message", "").strip()
